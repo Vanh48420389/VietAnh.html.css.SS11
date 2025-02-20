@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(69, 69, 69);
+}
+
+header nav {
+    height: 30px;
+    background-color: #5995db;
+}
+
+header div {
+    background-color: #b2d6ff;
+    text-align: center;
+    line-height: 300px;
+    height: 300px;
+}
+
+main .feature:nth-of-type(1) {
+    background-color: #f5cf8d;
+
+}
+
+main .feature:nth-of-type(2) {
+    background-color: #c8c6fa;
+
+
+}
+
+main .feature:nth-of-type(3) {
+    background-color: #f09a9d;
+
+}
+
+main .sign-up {
+    background-color: #d7e9fe;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+main .feature {
+    width: 33.33%;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+main .sign-up {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+.content-section {
+    background-color: #ebedf0;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:1200px) {
+    header {
+        order: 1;
+    }
+
+    .content-section {
+        order: 2;
+    }
+
+    main {
+        order: 3;
+    }
+    main{
+        display: flex;
+    }
+    
+    main .feature,
+    main .sign-up{
+        width: 50%;
+        height: 300px;
+        line-height: 300px;
+    }
+    main .sign-up{
+        order: 1;
+    }
+    main .feature{
+        order: 2;
+    }
+
+}
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+    }
+    main > *{
+        width: 100% !important;
+    }
+    
+}
